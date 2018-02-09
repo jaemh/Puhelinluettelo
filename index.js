@@ -6,7 +6,7 @@
   const cors = require('cors')
   var fs = require("fs");
 
-
+  app.use(express.static('build'));
   app.use(cors());
     
     let contents = fs.readFileSync("db.json");
