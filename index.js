@@ -101,7 +101,7 @@ app.get('/info', (request, response) => {
       const size = persons.length
       const date = new Date()
       let count = 'Puhelinluettelossa on ' + size + 'henkilön tiedot.'
-      response.status(200).send(count + "\n" + date)
+      response.status(200).send(count + "\n" + date);
     })
 
 })
